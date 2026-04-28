@@ -17,6 +17,10 @@ Shader "Custom/Transparent"
 
         Pass
         {
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+            Cull Off
+
             HLSLPROGRAM
 
             #pragma vertex   Vertex
